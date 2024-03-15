@@ -1,0 +1,217 @@
+
+
+/*LAYOUT---------------------------------------
+*/
+
+
+body{
+    background-image: linear-gradient(to top, #ffffff, #6b6b6b);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    background: #e0e0e0;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+h2{
+    color: #dbdbdb;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+
+}
+
+h3{
+    margin-top: 20px;
+    color: #dbdbdb;
+    font-weight: 600;
+    font-size: 1.8em; 
+}
+
+
+p{
+    color: #000;
+    text-align: justify;
+    padding-left: 5px;
+    font-size: 1.2em;
+}
+
+li{
+    color: #000;
+    font-size: 1.1em;
+}
+
+img{
+    border-radius: 5px;
+}
+
+
+footer{
+    margin-top: 20px;
+    background-color: rgba(30, 30, 30, 0.8);
+    
+    padding-top: 30px;
+}
+
+footer h4{
+    color: #fff;
+    
+    padding-bottom: 10px;
+    font-size: 1.4em;
+}
+
+footer p{
+    color: #fff;
+    font-size: 1em;
+}
+
+footer p a{
+    padding: 5px;
+    color: #fff;
+    font-size: 1em;
+}
+
+footer a:hover{
+    color: #f0b41b;
+    transition: color 0.4s;
+}
+
+
+/*EDITANDO CONTEUDOS DOS ICONES FOOTER------------------------
+*/
+a.btn.btn-outline-light.ml-2{
+    border: 1px solid #000;
+    color: #000;
+}
+
+a.btn.btn-outline-light.ml-2:hover{
+    color: #fff;
+    background: #6b6b6b;
+    transition: background 0.5s;
+}
+
+/*FIM CONTEUDOS DOS ICONES FOOTER-----------------------
+*/
+
+
+
+/*FIM LAYOUT---------------------------------------
+*/
+
+
+
+
+/*EDITANDO LINKS NAVBAR---------------------------------------
+*/
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    letter-spacing: 0.2em;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #f0b41b;
+    transition: color 0.4s;
+} 
+
+
+
+.btn-outline-light{
+    border: 1px solid #000;
+    color: #000;
+}
+
+.btn-outline-light:hover{
+    color: #fff;
+    background: #6b6b6b;
+    transition: background 0.5s;
+}
+
+.degrade{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+
+
+/*FIM LINKS NAVBAR---------------------------------------
+*/
+
+
+/*CONTEUDOS---------------------------------------
+*/
+
+.cor-titulo{
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+
+
+.caixa{
+    margin-top: 2em;
+}
+
+.caixa-imagens{
+    display: flex;
+    align-self: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    padding: 0;
+}
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    h2{
+        font-size: 1.4em;
+        white-space: nowrap;
+    }
+
+    p{
+        font-size: 1em;
+    }
+    
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    h2{
+        font-size: 2em;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    h2{
+        font-size: 2em;
+    } 
+   
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    h2{
+        font-size: 3em;
+    }
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    h2{
+        font-size: 2.5;
+    }
+ }
+
+
+
+
+
+
+
+
+
