@@ -49,10 +49,11 @@ img{
 
 
 footer{
-    margin-top: 20px;
-    background: rgba(30, 30, 30, 0.8);
+    margin-top: 40px;
     padding-top: 30px;
+    border-top: none;
 }
+
 
 footer h4{
     color: #fff;
