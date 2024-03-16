@@ -80,14 +80,14 @@ footer a:hover{
 
 /*EDITANDO CONTEUDOS DOS ICONES FOOTER------------------------
 */
-a.btn.btn-outline-light.ml-2{
-    border: 1px solid #000;
-    color: #000;
+a.btn.btn-outline-dark.ml-2{
+    border: 1px solid #fff;
+    color: #fff;
 }
 
-a.btn.btn-outline-light.ml-2:hover{
-    color: #fff;
-    background: #6b6b6b;
+a.btn.btn-outline-dark.ml-2:hover{
+    color: #000;
+    background: #fff;
     transition: background 0.5s;
 }
 
