@@ -218,6 +218,9 @@ p{
     h2{
         font-size: 2.5;
     }
+    .email{
+        display: none;
+    }
  }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -225,6 +228,9 @@ p{
     h2{
         font-size: 4rem;
     } 
+    .email{
+        display: none;
+    }
 
    
  }
