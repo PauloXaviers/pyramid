@@ -22,6 +22,9 @@ header{
 }
 
 
+
+/*estilizando fontes*/
+
 h2{
     color: #000;
     font-weight: 700;
@@ -30,18 +33,34 @@ h2{
 
 }
 
-.tile-home{
+.title-home{
     color: #ffffff;
     font-weight: bold;
-    margin-bottom: 3rem;
     font-size: 4rem;
 }
 
 .text-home{
     color: #fff;
+    margin: 1rem auto;
+    padding: 1rem;
+    width:90%;
+}
+
+.text-whats{
+    color: #ffff;
     margin: 0 auto;
     padding: 1rem;
-    width:70%;
+    width: 70%;
+    text-align: center;
+    letter-spacing: .05rem;
+}
+
+.text-instagram{
+    color: #ffff;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 70%; 
+    text-align: center;
 }
 
 
@@ -58,15 +77,12 @@ p{
     text-align: justify;
     padding-left: 5px;
     font-size: 1.2em;
+    margin-top: 1rem;
 }
 
 li{
     color: #000;
     font-size: 1.1em;
-}
-
-img{
-    border-radius: 5px;
 }
 
 
@@ -100,6 +116,12 @@ footer a:hover{
 }
 
 
+
+/*fim estilizando fontes*/
+
+
+
+
 /*EDITANDO CONTEUDOS DOS ICONES FOOTER------------------------
 */
 a.btn.btn-outline-light{
@@ -118,12 +140,6 @@ a.btn.btn-outline-light:hover{
 
 
 
-/*FIM LAYOUT---------------------------------------
-*/
-
-
-
-
 /*EDITANDO LINKS NAVBAR---------------------------------------
 */
 
@@ -136,8 +152,8 @@ header {
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Distribui os itens igualmente */
-    padding: 10px 20px; /* Adiciona um espaçamento para melhorar o layout */
+    justify-content: space-between;
+    padding: 10px 20px; 
 }
 
 
@@ -170,8 +186,6 @@ header {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
 }
 
-
-
 /*FIM LINKS NAVBAR---------------------------------------
 */
 
@@ -179,9 +193,6 @@ header {
 /*CONTEUDOS---------------------------------------
 */
 
-p{
-    margin-top: 1rem;
-}
 
 .whatsapp-button {
     position: fixed;
@@ -200,7 +211,7 @@ p{
 }
 
 .whatsapp-button img {
-    width: 40%; /* Reduzindo o tamanho da imagem */
+    width: 40%; 
     height: auto;
 }
 
@@ -221,9 +232,8 @@ p{
 }
 
 #box-image {
-    position: relative; /* Permite que o ::before funcione */
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    position: relative;
+    width: 100%;
     height: 700px;
     background-image: url(../img/background_home.jpeg);
     background-repeat: no-repeat;
@@ -234,9 +244,10 @@ p{
     align-items: center;
     text-align: center;
     padding: 20px;
+    overflow: hidden;
 }
 
-/* Criando a camada escura */
+
 #box-image::before {
     content: "";
     position: absolute;
@@ -244,14 +255,66 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Ajuste a opacidade conforme necessário */
+    background-color: rgba(0, 0, 0, 0.6); 
 }
 
-/* Garante que o conteúdo fique sobre a camada escura */
+
 #box-image > * {
     position: relative;
     z-index: 1;
 }
+
+
+.form{
+    display: flex;
+    margin-top: 2.5rem;
+    flex-direction: column;
+}
+
+#title-form{
+    font-weight: bold;
+    margin-bottom: -1rem;
+}
+
+.text-label{
+    font-size: 1.2rem;
+}
+
+
+.box-inputs{
+    border: #6b6b6b 2px solid;
+    border-radius: .5rem;
+    height: 2.5rem;
+    padding: 1rem;
+}
+
+.message-area{
+    border: #6b6b6b 2px solid;
+    border-radius: .5rem;
+    height: 15rem;
+    padding: 1rem;
+}
+
+#send{
+    color: #fff;
+    font-size: 1.3rem;
+    width: 30%;
+    height: 2.5rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: #6b6b6b 2px solid ;
+    border-radius:2rem;
+    background-color: #1e80ff;
+}
+
+
+#send:hover{
+    cursor: pointer;
+    background: #4169E1;
+    transition: background 0.4s;
+}
+
+
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
@@ -264,17 +327,42 @@ p{
     }
     
     p{
-        font-size: .9em;
+        font-size: 1rem;
     }
     
+    .title-home{
+        font-size: 2.8rem;
+        margin-bottom: 0;
+    }
+
+    .text-home{
+        text-align: justify;
+    }
+
+    #send{
+        color: #fff;
+        font-size: 1rem;
+        width: 30%;
+        height: 2rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        border: #6b6b6b 2px solid ;
+        border-radius:2rem;
+        background-color: #1e80ff;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { 
+@media (min-width: 300px) and (max-width: 767.98px) { 
 
     h2{
-        font-size: 2.5;
+        font-size: 2rem;
     }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
     .email{
         display: none;
     }
